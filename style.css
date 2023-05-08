@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* setting the default settings for the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: whitesmoke;
+  background: #1f2937;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+p {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* this targets all the container in my HTML code */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.header {
+  background: white;
+  color: black;
+  height: 80px;
+}
+
+.logo {
+  max-width: 300px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header a {
+  color: #48487f;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* saw this in YouTube and decided to incorporate to make it more responsive */
+.header a:hover {
+  color: #9191cb;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header ul li {
+  margin-left: 20px;
+}
+
+/* Styling the hero image and items */
+
+.hero {
+  min-height: 400px;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin: 20px 0;
+}
+
+strong {
+  color: #9dcced;
+}
+
+/* Specifying the max width of the image */
+.hero img {
+  max-width: 400px;
+  margin: 40px 0;
+}
+
+/* Follow YouTube tutorial how to style button and applied on this one */
+.cta {
+  padding: 15px 30px;
+  background: #9dcced;
+  color: #48487f;
+  outline: none;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+/* Styling the boxes section */
+
+.boxes {
+  min-height: 400px;
+  background: white;
+  color: #1f2937;
+}
+
+.boxes .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+.boxes .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.container .box {
+  width: 200px;
+  height: 200px;
+  background: #1f2937;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 14px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.item .para p {
+  font-size: 16px;
+  font-weight: 700;
+}
