@@ -283,7 +283,14 @@ strong {
     padding-left: 50px;
   }
 
+  .container .left p, h1 {
+    text-align: center;
+  }
+
   .cta {
     margin-top: 20px;
   }
-}
+  
+  .boxes .top h1 {
+    text-align: center;
+  }
