@@ -33,6 +33,7 @@ ul {
   padding: 0 30px;
 }
 
+/* styling the nav or header of the page */
 .header {
   background: white;
   color: black;
@@ -97,6 +98,7 @@ ul {
   font-weight: 400;
   line-height: 1.8;
   margin: 20px 0;
+  margin-right: 30px;
 }
 
 strong {
@@ -111,9 +113,10 @@ strong {
 
 /* Follow YouTube tutorial how to style button and applied on this one */
 .cta {
+  margin-top: 20px;
   padding: 15px 30px;
-  background: #9dcced;
-  color: #48487f;
+  background: #3882f6;
+  color: #fff;
   outline: none;
   border: none;
   font-size: 13px;
@@ -166,4 +169,121 @@ strong {
 .item .para p {
   font-size: 16px;
   font-weight: 700;
+}
+
+/* Styling 3rd layer of the page */
+
+.location {
+  min-height: 300px;
+  background: #e6ebf4;
+}
+
+.map img {
+  min-width: 600px;
+  margin: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.location .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styling layer 4 booking */
+
+.signup {
+  min-height: 140px;
+  background: #e6ebf4;
+}
+
+.container .booking-box {
+  min-width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #3882f6;
+  padding: 15px 0;
+  border-radius: 10px;
+}
+
+.booking-box .left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 20px;
+}
+
+.booking-box .call {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  margin-right: 20px;
+}
+
+/* styling the footer where the address and contact number is located */
+/* TODO will need to style links for the buttons and navbar up the top to their respected location */
+
+.footer {
+  min-height: 300px;
+  min-width: 800px;
+  background: #e6ebf4;
+  color: #1f2937;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  gap: 10px;
+  border-top: 1px solid black;
+}
+
+.container p {
+  margin-bottom: 1px;
+}
+
+.container .container-left {
+  display: flex;
+}
+
+.container .far-left {
+  align-self: flex-end;
+}
+
+/* copyright section */
+
+.copyright {
+  height: 40px;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Making the page responsive - googled and saw youtube video and followed the process to make my website the same */
+
+@media (max-width: 831px) {
+  .hero .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .footer .container {
+    display: block;
+    padding-left: 50px;
+  }
+
+  .cta {
+    margin-top: 20px;
+  }
 }
